@@ -2,6 +2,7 @@ package icbm.gangshao.terminal.command;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import icbm.gangshao.ISpecialAccess;
 import icbm.gangshao.access.AccessLevel;
@@ -35,7 +36,7 @@ public class CommandTarget extends TerminalCommand {
 
                     if (args.length > 2) {
                         bool = args[2];
-                        change = Boolean.getBoolean(bool);
+                        change = Boolean.parseBoolean(bool);
                     }
 
                     if (obj.equalsIgnoreCase("player")) {

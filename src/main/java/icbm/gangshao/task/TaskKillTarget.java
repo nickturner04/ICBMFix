@@ -9,6 +9,7 @@ public class TaskKillTarget extends TaskSearchTarget {
 
         if (super.tileEntity instanceof IAutoSentry) {
             if (!super.tileEntity.isValidTarget(super.tileEntity.getTarget())) {
+                System.out.println("Targeting Target");
                 super.tileEntity.setTarget(null);
                 super.tileEntity.cancelRotation();
                 return false;
