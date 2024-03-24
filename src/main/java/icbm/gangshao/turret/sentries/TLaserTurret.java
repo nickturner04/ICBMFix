@@ -7,6 +7,7 @@ import icbm.gangshao.ProjectileType;
 import icbm.gangshao.damage.TileDamageSource;
 import icbm.gangshao.platform.TTurretPlatform;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import universalelectricity.core.vector.Vector3;
@@ -107,7 +108,7 @@ public class TLaserTurret extends TAutomaticTurret {
     @Override
     protected boolean onFire() {
         if (!this.worldObj.isRemote && this.getPlatform() != null) {
-            if (super.target instanceof EntityLiving) {
+            if (super.target instanceof EntityLivingBase) {
                 final TTurretPlatform platform = this.getPlatform();
                 platform.wattsReceived -= this.getFiringRequest();
                 super.target.attackEntityFrom(

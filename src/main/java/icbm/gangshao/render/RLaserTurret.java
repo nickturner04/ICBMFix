@@ -1,5 +1,7 @@
 package icbm.gangshao.render;
 
+import calclavia.lib.render.CalclaviaRenderHelper;
+import calclavia.lib.render.ITagRender;
 import calclavia.lib.render.RenderTaggedTile;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -7,10 +9,18 @@ import icbm.gangshao.access.AccessLevel;
 import icbm.gangshao.muoxing.MLeiShe;
 import icbm.gangshao.turret.TTurretBase;
 import icbm.gangshao.turret.sentries.TLaserTurret;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
+import net.minecraft.client.renderer.entity.RendererLivingEntity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 @SideOnly(Side.CLIENT)
 public class RLaserTurret extends RenderTaggedTile {
@@ -23,7 +33,48 @@ public class RLaserTurret extends RenderTaggedTile {
     public void renderTileEntityAt(
         final TileEntity t, final double x, final double y, final double z, final float f
     ) {
-        super.renderTileEntityAt(t, x, y, z, f);
+        if (t != null && t instanceof ITagRender
+            && this.getPlayer().getDistance(
+            (double) t.xCoord, (double) t.yCoord, (double) t.zCoord
+        ) <= (double) RendererLivingEntity.NAME_TAG_RANGE) {
+            HashMap tags = new HashMap();
+            float height = ((ITagRender) t).addInformation(tags, this.getPlayer());
+            EntityClientPlayerMP player = Minecraft.getMinecraft().thePlayer;
+
+            if (player.ridingEntity == null) {
+                MovingObjectPosition objectPosition = player.rayTrace(8.0D, 1.0F);
+
+                if (objectPosition != null) {
+                    boolean isLooking = false;
+
+                    for (int it = 0; (float) it < height; ++it) {
+                        if (objectPosition.blockX == t.xCoord
+                            && objectPosition.blockY == t.yCoord + it
+                            && objectPosition.blockZ == t.zCoord) {
+                            isLooking = true;
+                        }
+                    }
+
+                    if (isLooking) {
+                        Iterator var17 = tags.entrySet().iterator();
+
+                        for (int i = 0; var17.hasNext(); ++i) {
+                            Map.Entry entry = (Map.Entry) var17.next();
+
+                            if (entry.getKey() != null) {
+                                CalclaviaRenderHelper.renderFloatingText(
+                                    (String) entry.getKey(),
+                                    (float) x + 0.5F,
+                                    (float) y + (float) i * 0.25F - 2.0F + height,
+                                    (float) z + 0.5F,
+                                    ((Integer) entry.getValue()).intValue()
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         if (t instanceof TLaserTurret) {
             final TLaserTurret tileEntity = (TLaserTurret) t;

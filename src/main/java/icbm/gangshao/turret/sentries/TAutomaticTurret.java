@@ -14,11 +14,7 @@ import icbm.gangshao.task.TaskManager;
 import icbm.gangshao.task.TaskSearchTarget;
 import icbm.gangshao.turret.TTurretBase;
 import icbm.gangshao.turret.upgrades.ItPaoTaiUpgrades;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityFlying;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.IMerchant;
-import net.minecraft.entity.INpc;
+import net.minecraft.entity.*;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.item.EntityItem;
@@ -224,7 +220,7 @@ public abstract class TAutomaticTurret extends TTurretBase implements IAutoSentr
                 boolean fired = false;
                 final IAmmunition bullet = (IAmmunition) ammoStack.getItem();
 
-                if (this.target instanceof EntityLiving) {
+                if (this.target instanceof EntityLivingBase) {
                     final TTurretPlatform platform = this.getPlatform();
                     platform.wattsReceived -= this.getFiringRequest();
 
