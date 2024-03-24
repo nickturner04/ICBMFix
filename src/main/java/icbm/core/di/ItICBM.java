@@ -9,5 +9,8 @@ public class ItICBM extends Item {
         super();
         this.setUnlocalizedName("icbm:" + name);
         this.setCreativeTab((CreativeTabs) ICBMTab.INSTANCE);
+        this.setTextureName("icbm:" + name);
     }
+
+
 }
