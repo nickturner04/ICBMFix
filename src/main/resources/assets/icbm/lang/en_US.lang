@@ -1,0 +1,166 @@
+
+itemGroup.ICBM=ICBM
+
+potion.toxin=Toxin
+potion.virus=Virus
+potion.frostBite=Frost Bite
+potion.radiation=Radiation
+
+## Items
+item.icbm:sulfur.name=Sulfur
+item.icbm:poisonPowder.name=Poison Powder
+item.icbm:antidote.name=Antidote
+item.icbm:radarGun.name=Radar Gun
+item.icbm:remoteDetonator.name=Remote Detonator
+item.icbm:defuser.name=Defuser
+item.icbm:laserDesignator.name=Laser Designator
+item.icbm:tracker.name=Tracker
+item.icbm:signalDisrupter.name=Signal Disrupter
+
+item.icbm:bullet.0.name=Conventional Bullet
+item.icbm:bullet.1.name=Antimatter Bullet
+item.icbm:rocketLauncher.name=Rocket Launcher
+
+## ICBM Machines
+icbm.machine.0.name=Launcher Platform T1
+icbm.machine.1.name=Launcher Platform T2
+icbm.machine.2.name=Launcher Platform T3
+icbm.machine.3.name=Launcher Control Panel T1
+icbm.machine.4.name=Launcher Control Panel T2
+icbm.machine.5.name=Launcher Control Panel T3
+icbm.machine.6.name=Launcher Support Frame T1
+icbm.machine.7.name=Launcher Support Frame T2
+icbm.machine.8.name=Launcher Support Frame T3
+icbm.machine.9.name=Radar Station
+icbm.machine.10.name=EMP Tower
+icbm.machine.11.name=Cruise Launcher
+icbm.machine.12.name=Missile Coordinator
+
+## ICBM Explosives
+
+## Block Form
+icbm.explosive.condensed.name=Condensed Explosives
+icbm.explosive.shrapnel.name=Shrapnel Explosives
+icbm.explosive.incendiary.name=Incendiary Explosives
+icbm.explosive.debilitation.name=Debilitation Explosives
+icbm.explosive.chemical.name=Chemical Explosives
+icbm.explosive.anvil.name=Anvil Explosives
+icbm.explosive.repulsive.name=Repulsive Explosives
+icbm.explosive.attractive.name=Attractive Explosives
+
+icbm.explosive.fragmentation.name=Fragmentation Explosives
+icbm.explosive.contagious.name=Contagious Explosives
+icbm.explosive.sonic.name=Sonic Explosives
+icbm.explosive.breaching.name=Breaching Explosives
+icbm.explosive.rejuvenation.name=Rejuvenation Explosives
+icbm.explosive.thermobaric.name=Thermobaric Explosives
+
+icbm.explosive.nuclear.name=Nuclear Explosives
+icbm.explosive.emp.name=EMP Explosives
+icbm.explosive.exothermic.name=Exothermic Explosives
+icbm.explosive.endothermic.name=Endothermic Explosives
+icbm.explosive.antiGravitational.name=Anti-Gravitational Explosives
+icbm.explosive.ender.name=Ender Explosives
+icbm.explosive.hypersonic.name=Hypersonic Explosives
+
+icbm.explosive.antimatter.name=Antimatter Explosives
+icbm.explosive.redMatter.name=Red Matter Explosives
+
+icbm.explosive.sMine.name=S-Mine
+
+## Missile Form
+icbm.missile.condensed.name=Conventional Missile
+icbm.missile.shrapnel.name=Shrapnel Missile
+icbm.missile.incendiary.name=Incendiary Missile
+icbm.missile.debilitation.name=Debilitation Missile
+icbm.missile.chemical.name=Chemical Missile
+icbm.missile.anvil.name=Anvil Missile
+icbm.missile.repulsive.name=Repulsive Missile
+icbm.missile.attractive.name=Attractive Missile
+
+icbm.missile.fragmentation.name=Fragmentation Missile
+icbm.missile.contagious.name=Contagious Missile
+icbm.missile.sonic.name=Sonic Missile
+icbm.missile.breaching.name=Breaching Missile
+icbm.missile.rejuvenation.name=Rejuvenation Missile
+icbm.missile.thermobaric.name=Thermobaric Missile
+
+icbm.missile.nuclear.name=Nuclear Missile
+icbm.missile.emp.name=EMP Missile
+icbm.missile.exothermic.name=Exothermic Missile
+icbm.missile.endothermic.name=Endothermic Missile
+icbm.missile.antiGravitational.name=Anti-Gravitational Missile
+icbm.missile.ender.name=Ender Missile
+icbm.missile.hypersonic.name=Hypersonic Missile
+
+icbm.missile.antimatter.name=Antimatter Missile
+icbm.missile.redMatter.name=Red Matter Missile
+
+## Special Missiles
+icbm.missile.missileModule.name=Missile Module
+icbm.missile.antiBallistic.name=Anti-ballistic Missile
+icbm.missile.cluster.name=Cluster Missile
+icbm.missile.nuclearCluster.name=Nuclear Cluster Missile
+icbm.missile.homing.name=Homing Missile
+
+## Grenades
+icbm.grenade.condensed.name=Conventional Grenade
+icbm.grenade.shrapnel.name=Shrapnel Grenade
+icbm.grenade.incendiary.name=Incendiary Grenade
+icbm.grenade.debilitation.name=Debilitation Grenade
+icbm.grenade.chemical.name=Chemical Grenade
+icbm.grenade.anvil.name=Anvil Grenade
+icbm.grenade.repulsive.name=Repulsive Grenade
+icbm.grenade.attractive.name=Attractive Grenade
+
+## Explosive Minecarts
+icbm.minecart.condensed.name=Explosive Cart
+icbm.minecart.shrapnel.name=Shrapnel Minecart
+icbm.minecart.incendiary.name=Incendiary Minecart
+icbm.minecart.debilitation.name=Debilitation Minecart
+icbm.minecart.chemical.name=Chemical Minecart
+icbm.minecart.anvil.name=Anvil Minecart
+icbm.minecart.repulsive.name=Repulsive Minecart
+icbm.minecart.attractive.name=Attractive Minecart
+
+icbm.minecart.fragmentation.name=Fragmentation Minecart
+icbm.minecart.contagious.name=Contagious Minecart
+icbm.minecart.sonic.name=Sonic Minecart
+icbm.minecart.breaching.name=Breaching Minecart
+icbm.minecart.rejuvenation.name=Rejuvenation Minecart
+icbm.minecart.thermobaric.name=Thermobaric Minecart
+
+## ICBM Misc Blocks
+tile.icbm:oreSulfur.name=Sulfur Ore
+tile.icbm:concrete.name=Concrete
+tile.icbm:concreteCompact.name=Compact Concrete
+tile.icbm:concreteReinforced.name=Reinforced Concrete
+tile.icbm:glassReinforced.name=Reinforced Glass
+tile.icbm:glassPressurePlate.name=Glass Pressure Plate
+tile.icbm:glassButton.name=Glass Button
+tile.icbm:camouflage.name=Camouflage
+tile.icbm:proximityDetector.name=Proximity Detector
+tile.icbm:spikes.0.name=Spikes
+tile.icbm:spikes.1.name=Poison Spikes
+tile.icbm:spikes.2.name=Flammable Spikes
+
+## ICBM Sentry
+## Translated by Calclavia
+tile.icbm:turret.0.name=Gun Turret
+tile.icbm:turret.1.name=Railgun
+tile.icbm:turret.2.name=AA Turret
+tile.icbm:turret.3.name=Laser Turret
+tile.icbm:turretPlatform.name=Turret Platform
+
+item.icbm:bulletShell.name=Bullet Shell
+item.icbm:bullet.name=Bullet
+item.icbm:bulletRailgun.name=Railgun Bullet
+item.icbm:bulletAntimatter.name=Antimatter Bullet
+item.icbm:bulletInfinite.name=Infinite Bullet
+
+item.icbm:targetCard.name=Range Upgrade
+item.icbm:shellCollector.name=Shell Collector Upgrade
+
+## Deaths
+death.attack.bullet=%1$s was shot into a swiss cheese!
+death.attack.laser=%1$s was vaporized by lasers!
