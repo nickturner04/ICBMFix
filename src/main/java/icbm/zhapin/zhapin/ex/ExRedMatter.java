@@ -1,7 +1,5 @@
 package icbm.zhapin.zhapin.ex;
 
-import java.util.List;
-
 import icbm.api.explosion.ExplosionEvent;
 import icbm.api.explosion.IExplosiveIgnore;
 import icbm.core.MainBase;
@@ -14,7 +12,7 @@ import mffs.api.IForceFieldBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.crafting.IRecipe;
@@ -24,6 +22,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import universalelectricity.core.vector.Vector3;
 import universalelectricity.prefab.RecipeHelper;
+
+import java.util.List;
 
 public class ExRedMatter extends ZhaPin {
     public ExRedMatter(final String name, final int ID, final int tier) {
@@ -231,7 +231,7 @@ public class ExRedMatter extends ZhaPin {
                 explosionCreated = true;
             }
 
-            if (entity2 instanceof EntityLiving) {
+            if (entity2 instanceof EntityLivingBase) {
                 entity2.fallDistance = 0.0f;
             } else if (entity2 instanceof EExplosion) {
                 if (((EExplosion) entity2).haoMa != ZhaPin.antimatter.getID()) {

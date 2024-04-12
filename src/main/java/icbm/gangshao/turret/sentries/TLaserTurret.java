@@ -6,7 +6,6 @@ import icbm.gangshao.ICBMSentry;
 import icbm.gangshao.ProjectileType;
 import icbm.gangshao.damage.TileDamageSource;
 import icbm.gangshao.platform.TTurretPlatform;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;

@@ -1,7 +1,5 @@
 package icbm.wanyi.b;
 
-import java.util.List;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import icbm.core.ICBMTab;
@@ -11,7 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,6 +21,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import java.util.List;
 
 public class BSpikes extends BICBM {
     private IIcon iconPoison;
@@ -178,14 +178,14 @@ public class BSpikes extends BICBM {
         final int par4,
         final Entity par5Entity
     ) {
-        if (par5Entity instanceof EntityLiving) {
+        if (par5Entity instanceof EntityLivingBase) {
             par5Entity.attackEntityFrom(DamageSource.cactus, 1);
 
             if (par1World.getBlockMetadata(par2, par3, par4) == 1) {
-                ((EntityLiving) par5Entity)
+                ((EntityLivingBase) par5Entity)
                     .addPotionEffect(new PotionEffect(Potion.poison.id, 140, 0));
             } else if (par1World.getBlockMetadata(par2, par3, par4) == 2) {
-                ((EntityLiving) par5Entity).setFire(7);
+                ((EntityLivingBase) par5Entity).setFire(7);
             }
         }
     }

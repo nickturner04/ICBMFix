@@ -1,8 +1,5 @@
 package icbm.gangshao.turret;
 
-import java.util.List;
-import java.util.Random;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import icbm.core.ICBMTab;
@@ -18,7 +15,6 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -35,6 +31,9 @@ import universalelectricity.prefab.implement.IRedstoneReceptor;
 import universalelectricity.prefab.implement.IRotatable;
 import universalelectricity.prefab.multiblock.IBlockActivate;
 import universalelectricity.prefab.multiblock.IMultiBlock;
+
+import java.util.List;
+import java.util.Random;
 
 public class BlockTurret extends BICBM {
     public BlockTurret() {

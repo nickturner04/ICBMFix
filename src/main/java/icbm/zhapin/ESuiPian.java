@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.IEntityAdditionalSpawnData;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
@@ -331,9 +331,9 @@ public class ESuiPian extends EntityArrow implements IEntityAdditionalSpawnData 
                     }
 
                     if (movingObjPos.entityHit.attackEntityFrom(damageSource, damage)) {
-                        if (movingObjPos.entityHit instanceof EntityLiving) {
-                            final EntityLiving var21
-                                = (EntityLiving) movingObjPos.entityHit;
+                        if (movingObjPos.entityHit instanceof EntityLivingBase) {
+                            final EntityLivingBase var21
+                                = (EntityLivingBase) movingObjPos.entityHit;
 
                             if (!super.worldObj.isRemote) {
                                 var21.setArrowCountInEntity(
